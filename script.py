@@ -95,7 +95,7 @@ def create_section(section: Section):
                 klass=f"{'outline' if section.item_style == 'outline' else ''}",
                 href=item.url,
                 target="_blank",
-                style=f"color: {item.text_color};" if item.text_color else None,
+                    style=f"color: {item.text_color or section.text_color};" if item.text_color or section.text_color else None,
             )(
                 h(
                     "img",
@@ -106,7 +106,10 @@ def create_section(section: Section):
                 )
                 if item.icon
                 else None,
-                h("hgroup")(h("h4")(item.title), h("h5")(item.description)),
+                h("hgroup")(
+                        h("h4", style=f"color: {item.text_color or section.text_color};" if item.text_color or section.text_color else None)(item.title),
+                        h("h5", style=f"color: {item.text_color or section.text_color};" if item.text_color or section.text_color else None)(item.description),
+                ),
             )
             if item.url
             else raw(f"""
