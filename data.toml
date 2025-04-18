@@ -10,7 +10,7 @@ base_url = "https://gthgotohealth.github.io"
 
 [[sections]]
 title = "Links"
-description = "Follow Us!"
+description = "Follow Us!!"
 direction = "column"
 item_style = "outline"
 [[sections.items]]
