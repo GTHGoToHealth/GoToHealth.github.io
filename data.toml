@@ -5,7 +5,7 @@ image = "jake.webp"
 theme = "dark"
 primary_color = "#ffbf00"
 text_align = "center"
-gtag_id = "G-XLJ81"
+gtag_id = "G-XLJ81DCZFV"
 base_url = "https://gthgotohealth.github.io"
 
 [[sections]]
@@ -13,8 +13,8 @@ title = "Links"
 description = "Follow Us!"
 direction = "column"
 item_style = "outline"
-[[sections.items]]
-[[embed_url = "https://www.youtube.com/embed/x0gUY9ddjQY"]]
+#[[sections.items]]
+#[[embed_url = "https://www.youtube.com/embed/x0gUY9ddjQY"]]
 [[sections.items]]
 title = "Instagram"
 description = "Follow us and DM us a screenshot for a Mystery Reward"
