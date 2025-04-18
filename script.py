@@ -9,6 +9,7 @@ class Item:
     title: str
     description: Optional[str] = None
     url: Optional[str] = None
+    text_color: Optional[str] = None
     icon: Optional[str] = None
     embed_url: Optional[str] = None
     embed_height: str = "315"
@@ -21,6 +22,7 @@ class Section:
     icon: Optional[str] = None
     icon_size: str = "24px"
     direction: str = "column"
+    text_color: Optional[str] = None
     item_style: str = "outline"
     items: List[Item] = field(default_factory=list)
 
@@ -61,6 +63,7 @@ def load_data(file_path):
                 icon_size=section.get("icon_size", "24px"),
                 direction=section.get("direction", "column"),
                 item_style=section.get("item_style", "outline"),
+                text_color=section.get("text_color"),
                 items=[
                     Item(
                         title=item.get("title"),
@@ -69,6 +72,7 @@ def load_data(file_path):
                         icon=item.get("icon"),
                         embed_url=item.get("embed_url"),
                         embed_height=item.get("embed_height", "315"),
+                        text_color=item.get("text_color"),
                     )
                     for item in section.get("items", [])
                 ],
@@ -91,6 +95,7 @@ def create_section(section: Section):
                 klass=f"{'outline' if section.item_style == 'outline' else ''}",
                 href=item.url,
                 target="_blank",
+                style=f"color: {item.text_color};" if item.text_color else None,
             )(
                 h(
                     "img",
@@ -120,7 +125,7 @@ def create_section(section: Section):
         for item in section.items
     )
 
-    return h("div", klass="section")(
+    return h("div", klass="section", style=f"color: {section.text_color};" if section.text_color else None)(
         h("hgroup")(
             h("h3")(section.title),
             h("p")(section.description),
@@ -189,9 +194,9 @@ def create_header(data: Data):
 
 def create_footer():
     return h("footer", klass="container")(
-        h("small")("Go-To Health Copyright"),
+        h("small")("Copyright of "),
         h("a", klass="", href="https://gthgotohealth.github.io/GoToHealth.github.io/", target="_blank")(
-            "R"
+            "Go-To Health"
         ),
     )
 
