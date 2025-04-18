@@ -14,6 +14,8 @@ description = "Follow Us!!"
 direction = "column"
 text_color = "#ffbf00" 
 item_style = "outline"
+hover_color = "#ffffff"
+hover_text_color = "#ffffff"
 [[sections.items]]
 #[[embed_url = "https://www.youtube.com/embed/x0gUY9ddjQY"]]
 [[sections.items]]
@@ -35,21 +37,23 @@ title = "Links"
 description = "Look for me on these websites"
 direction = "row"
 text_color = "#3f4436" 
+hover_color = "#ffffff"
+hover_text_color = "#ffffff"
 item_style = "filled"
 icon_size = "30px"
 [[sections.items]]
-icon = "https://cdn.simpleicons.org/instagram/ffffff"
+icon = "https://cdn.simpleicons.org/instagram/3f4436"
 title = "Instagram"
 url = "https://www.instagram.com/" 
 [[sections.items]]
-icon = "https://cdn.simpleicons.org/imdb/ffffff"
+icon = "https://cdn.simpleicons.org/imdb/3f4436"
 title = "IMDb"
 url = "https://www.imdb.com/"
 [[sections.items]]
-icon = "https://cdn.simpleicons.org/wikipedia/ffffff"
+icon = "https://cdn.simpleicons.org/wikipedia/3f4436"
 title = "Wikipedia"
 url = "https://en.wikipedia.org/wiki/Jake_Gyllenhaal"
 [[sections.items]]
 title = "Rotten Tomatoes"
-icon = "https://cdn.simpleicons.org/rottentomatoes/ffffff"
+icon = "https://cdn.simpleicons.org/rottentomatoes/3f4436"
 url = "https://www.rottentomatoes.com/celebrity/jake_gyllenhaal"
