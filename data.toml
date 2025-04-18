@@ -14,7 +14,7 @@ description = "Follow Us!!"
 direction = "column"
 text_color = "#ffbf00" 
 item_style = "outline"
-hover_color = "#ffffff"
+
 #hover_text_color = "#ffffff"
 [[sections.items]]
 #[[embed_url = "https://www.youtube.com/embed/x0gUY9ddjQY"]]
@@ -22,38 +22,44 @@ hover_color = "#ffffff"
 title = "Instagram"
 description = "Follow us and DM us a screenshot for a Mystery Reward"
 url = "https://www.instagram.com"
+hover_color = "#ffffff"
 [[sections.items]]
 title = "60% off on Zomato"
 description = "Order on Zomato"
 url = "https://www.zomato.com"
+hover_color = "#ffffff"
 [[sections.items]]
 title = "60% off on Swiggy"
 description = "Order on Zomato"
 url = "https://www.swiggy.com"
+hover_color = "#ffffff"
 
 
 [[sections]]
 title = "Links"
 description = "Look for me on these websites"
 direction = "row"
-text_color = "#3f4436" 
-hover_color = "#ffffff"
-#hover_text_color = "#ffbf00"
+
 item_style = "filled"
 icon_size = "30px"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/instagram/3f4436"
 title = "Instagram"
 url = "https://www.instagram.com/" 
+text_color = "#3f4436" 
+hover_color = "#ffffff"
+hover_text_color = "#ffbf00"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/imdb/3f4436"
 title = "IMDb"
 url = "https://www.imdb.com/"
+text_color = "#3f4436" 
+hover_color = "#ffffff"
+hover_text_color = "#ffbf00"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/wikipedia/3f4436"
 title = "Wikipedia"
 url = "https://en.wikipedia.org/wiki/Jake_Gyllenhaal"
-[[sections.items]]
-title = "Rotten Tomatoes"
-icon = "https://cdn.simpleicons.org/rottentomatoes/3f4436"
-url = "https://www.rottentomatoes.com/celebrity/jake_gyllenhaal"
+text_color = "#3f4436" 
+hover_color = "#ffffff"
+hover_text_color = "#ffbf00"
