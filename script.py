@@ -189,9 +189,9 @@ def create_header(data: Data):
 
 def create_footer():
     return h("footer", klass="container")(
-        h("small")("Generated with "),
-        h("a", klass="", href="https://github.com/thevahidal/jake/", target="_blank")(
-            "Jake"
+        h("small")("Go-To Health Copyright"),
+        h("a", klass="", href="https://gthgotohealth.github.io/GoToHealth.github.io/", target="_blank")(
+            "R"
         ),
     )
 
