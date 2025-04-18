@@ -15,7 +15,7 @@ direction = "column"
 text_color = "#ffbf00" 
 item_style = "outline"
 hover_color = "#ffffff"
-hover_text_color = "#ffffff"
+#hover_text_color = "#ffffff"
 [[sections.items]]
 #[[embed_url = "https://www.youtube.com/embed/x0gUY9ddjQY"]]
 [[sections.items]]
@@ -38,7 +38,7 @@ description = "Look for me on these websites"
 direction = "row"
 text_color = "#3f4436" 
 hover_color = "#ffffff"
-hover_text_color = "#ffffff"
+#hover_text_color = "#ffbf00"
 item_style = "filled"
 icon_size = "30px"
 [[sections.items]]
