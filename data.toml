@@ -5,7 +5,7 @@ image = "Logo Final 3-02.webp"
 theme = "dark"
 primary_color = "#ffbf00"
 text_align = "center"
-gtag_id = "G-XLJ81DCZFV"
+gtag_id = "GTM-55D6RKC6"
 base_url = "https://gthgotohealth.github.io"
 
 [[sections]]
