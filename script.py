@@ -92,18 +92,18 @@ def create_section(section: Section):
     items = frag(
         (
         # Generate unique class name
-        (
+        ( 
             h("style")(
-                f"""
-                .item-{abs(hash(item.title))} {{
+                     f"""
+                    .item-{abs(hash(item.title))} {{
                     transition: all 0.3s ease;
-                    {"color: " + (item.text_color or section.text_color) + ";" if (item.text_color or section.text_color) else ""}
-                }}
-                .item-{abs(hash(item.title))}:hover {{
-                    {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)};
-                }}
-                """
-            )
+                    {"color: " + (item.text_color or section.text_color) + " !important;" if (item.text_color or section.text_color) else ""}
+                                                 }}
+                    .item-{abs(hash(item.title))}:hover {{
+                    {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)} !important;
+                    }}
+                    """
+                    )
             if (item.hover_color or section.hover_color or item.text_color or section.text_color)
             else None,
             h(
