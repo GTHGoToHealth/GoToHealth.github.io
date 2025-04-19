@@ -5,15 +5,15 @@ image = "Logo Final 3-02.webp"
 theme = "dark"
 primary_color = "#ffbf00"
 text_align = "center"
-#gtag_id = "G-XLJ81DCZFV"
+gtag_id = "G-XLJ81DCZFV"
 base_url = "https://gthgotohealth.github.io"
 
 [[sections]]
 title = "Links"
 description = "Follow Us!!"
 direction = "column"
-text_color = "#ffbf00" 
 item_style = "outline"
+text_color = "#ffbf00" 
 hover_color = "#ffffff"
 
 #[[sections.items]]
@@ -21,7 +21,7 @@ hover_color = "#ffffff"
 
 [[sections.items]]
 title = "🎉 Mystery Cashback Reward!"
-description = "1. Follow us on Instagram. \n2. DM us the Screenshot. /n3. Done!"
+#description = "1. Follow us on Instagram. \n2. DM us the Screenshot. /n3. Done!"
 description = """1. Follow us on Instagram.
 2. DM us the Screenshot.
 3. Done!"""
@@ -46,8 +46,8 @@ description = "Look for me on these websites"
 direction = "row"
 item_style = "filled"
 icon_size = "30px"
-hover_color = "#ffffff"
 text_color = "#3f4436" 
+hover_color = "#ffffff"
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/instagram/3f4436"
