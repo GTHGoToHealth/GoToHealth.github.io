@@ -182,7 +182,7 @@ def create_head(data: Data):
                 </script>
                 <!-- End Google Tag Manager -->
                 """
-        ) if data.gtag_id else None,
+        ) 
 
 
 # GTM Script (in HEAD)
@@ -199,7 +199,7 @@ def create_head(data: Data):
             <!-- End Google Tag Manager -->
             """
         ) if data.gtag_id else None,
-
+        )
 
         h("style", rel="stylesheet")(
             f"""
