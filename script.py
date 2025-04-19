@@ -169,15 +169,21 @@ def create_head(data: Data):
         h("link", rel="stylesheet", href="css/style.css"),
         
 # From Google Analytics Script (in HEAD)
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-87LHKLZ7DY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            raw(
+            f"""
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-87LHKLZ7DY"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-87LHKLZ7DY');
-</script>
+            gtag('config', 'G-87LHKLZ7DY');
+                </script>
+                <!-- End Google Tag Manager -->
+                """
+        ) if data.gtag_id else None,
+
 
 # GTM Script (in HEAD)
         raw(
