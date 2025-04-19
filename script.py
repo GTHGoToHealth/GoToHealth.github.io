@@ -168,22 +168,20 @@ def create_head(data: Data):
         h("link", rel="stylesheet", href="css/pico.min.css"),
         h("link", rel="stylesheet", href="css/style.css"),
         
-# From Google Analytics Script (in HEAD)
-            raw(
-            f"""
+        # Google Analytics via gtag.js
+        raw(
+            """
             <!-- Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-87LHKLZ7DY"></script>
             <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)};
+            function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-87LHKLZ7DY');
-                </script>
-                <!-- End Google Tag Manager -->
-                """
+            </script>
+            """
         ),
-
 
 # GTM Script (in HEAD)
         raw(
@@ -198,7 +196,7 @@ def create_head(data: Data):
             </script>
             <!-- End Google Tag Manager -->
             """
-        ) if data.gtag_id else None,
+         ) if data.gtag_id else None,
 
 
         h("style", rel="stylesheet")(
