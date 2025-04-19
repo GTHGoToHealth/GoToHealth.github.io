@@ -94,9 +94,12 @@ def create_section(section: Section):
             h("style")(
                 f"""
                 .item-{abs(hash(item.title))} {{
-                    transition: all 0.3s ease;
+                    transition: transform 0.25s ease, box-shadow 0.25s ease;
+                    transform-origin: center;
                 }}
                 .item-{abs(hash(item.title))}:hover {{
+                    transform: scale(1.05);
+                    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
                     {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)};
                 }}
                 """
