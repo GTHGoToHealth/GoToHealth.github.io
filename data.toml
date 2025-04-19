@@ -21,7 +21,7 @@ hover_color = "#ffffff"
 
 [[sections.items]]
 title = "🎉 Mystery Cashback Reward!"
-description = "1. Follow us on Instagram. \n2. DM us the Screenshot. \n3. Done!"
+description = "Follow us on Instagram. ➜ DM us the Screenshot. ➜ Done!"
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#ffbf00" 
 
@@ -33,7 +33,7 @@ text_color = "#ffbf00"
 
 [[sections.items]]
 title = "60% off on Swiggy"
-description = "Order on Zomato"
+description = "Order on Swiggy"
 url = "https://www.swiggy.com"
 text_color = "#ffbf00" 
 
