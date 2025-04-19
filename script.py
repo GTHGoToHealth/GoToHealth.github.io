@@ -167,6 +167,17 @@ def create_head(data: Data):
         create_meta_tags(data),
         h("link", rel="stylesheet", href="css/pico.min.css"),
         h("link", rel="stylesheet", href="css/style.css"),
+        
+# From Google Analytics Script (in HEAD)
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87LHKLZ7DY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-87LHKLZ7DY');
+</script>
 
 # GTM Script (in HEAD)
         raw(
