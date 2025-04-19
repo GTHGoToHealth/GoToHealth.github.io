@@ -91,19 +91,17 @@ def load_data(file_path):
 def create_section(section: Section):
     items = frag(
         (
-        # Generate unique class name
-        ( 
             h("style")(
-                     f"""
-                    .item-{abs(hash(item.title))} {{
+                f"""
+                .item-{abs(hash(item.title))} {{
                     transition: all 0.3s ease;
-                    {"color: " + (item.text_color or section.text_color) + " !important;" if (item.text_color or section.text_color) else ""}
-                                                 }}
-                    .item-{abs(hash(item.title))}:hover {{
+                    {"color: " + (item.text_color or section.text_color) + ";" if (item.text_color or section.text_color) else ""}
+                }}
+                .item-{abs(hash(item.title))}:hover {{
                     {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)} !important;
-                    }}
-                    """
-                    )
+                }}
+                """
+            )
             if (item.hover_color or section.hover_color or item.text_color or section.text_color)
             else None,
             h(
@@ -117,6 +115,9 @@ def create_section(section: Section):
                     klass=f"item-{abs(hash(item.title))} {'outline' if section.item_style == 'outline' else ''}",
                     href=item.url,
                     target="_blank",
+                    style=f"color: {item.text_color or section.text_color};"
+                    if (item.text_color or section.text_color)
+                    else None,
                 )(
                     h(
                         "img",
@@ -133,10 +134,8 @@ def create_section(section: Section):
         )
         for item in section.items
     )
-    )
-    
 
-    return h("div", klass="section", style=f"color: {section.text_color};" if section.text_color else None)(
+    return h("div", klass="section")(
         h("hgroup")(
             h("h3")(section.title),
             h("p")(section.description),
