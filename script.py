@@ -199,7 +199,7 @@ def create_head(data: Data):
             <!-- End Google Tag Manager -->
             """
         ) if data.gtag_id else None,
-        )
+
 
         h("style", rel="stylesheet")(
             f"""
