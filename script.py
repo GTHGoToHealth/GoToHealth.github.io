@@ -175,14 +175,14 @@ def create_head(data: Data):
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-87LHKLZ7DY"></script>
             <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){dataLayer.push(arguments)};
             gtag('js', new Date());
 
             gtag('config', 'G-87LHKLZ7DY');
                 </script>
                 <!-- End Google Tag Manager -->
                 """
-        ) 
+        ),
 
 
 # GTM Script (in HEAD)
@@ -238,7 +238,7 @@ def generate_html(data: Data):
     sections = frag(create_section(section) for section in data.sections)
     return html(lang="en", data_theme=data.theme)(
 
-
+ 
         create_head(data),
         h("body")(
             # ✅ GTM noscript iframe goes here
