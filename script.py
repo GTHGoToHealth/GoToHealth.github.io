@@ -13,7 +13,6 @@ class Item:
     embed_url: Optional[str] = None
     embed_height: str = "315"
     text_color: Optional[str] = None
-    hover_text_color: Optional[str] = None
     hover_color: Optional[str] = None
    
 
@@ -29,7 +28,6 @@ class Section:
     item_style: str = "outline"
     items: List[Item] = field(default_factory=list)
     text_color: Optional[str] = None
-    hover_text_color: Optional[str] = None
     hover_color: Optional[str] = None
 
 
@@ -71,7 +69,6 @@ def load_data(file_path):
                 item_style=section.get("item_style", "outline"),
                 text_color=section.get("text_color"),
                 hover_color=section.get("hover_color"),
-                hover_text_color=section.get("hover_text_color"),
                 items=[
                     Item(
                         title=item.get("title"),
@@ -82,7 +79,6 @@ def load_data(file_path):
                         embed_height=item.get("embed_height", "315"),
                         text_color=item.get("text_color"),
                         hover_color=item.get("hover_color"),
-                        hover_text_color=item.get("hover_text_color"),
                     )
                     for item in section.get("items", [])
                 ],
@@ -94,7 +90,7 @@ def load_data(file_path):
 
 def create_section(section: Section):
     items = frag(
-            (
+        (
         # Generate unique class name
         (
             h("style")(
@@ -105,11 +101,10 @@ def create_section(section: Section):
                 }}
                 .item-{abs(hash(item.title))}:hover {{
                     {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)};
-                    {"color: " + (item.hover_text_color or section.hover_text_color) + ";" if (item.hover_text_color or section.hover_text_color) else ""}
                 }}
                 """
             )
-            if (item.hover_color or section.hover_color or item.text_color or section.text_color or item.hover_text_color or section.hover_text_color)
+            if (item.hover_color or section.hover_color or item.text_color or section.text_color)
             else None,
             h(
                 "div",
@@ -139,6 +134,7 @@ def create_section(section: Section):
         for item in section.items
     )
     )
+    
 
     return h("div", klass="section", style=f"color: {section.text_color};" if section.text_color else None)(
         h("hgroup")(

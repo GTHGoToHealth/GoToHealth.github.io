@@ -5,7 +5,7 @@ image = "Logo Final 3-02.webp"
 theme = "dark"
 primary_color = "#ffbf00"
 text_align = "center"
-gtag_id = "G-XLJ81DCZFV"
+#gtag_id = "G-XLJ81DCZFV"
 base_url = "https://gthgotohealth.github.io"
 
 [[sections]]
@@ -14,15 +14,15 @@ description = "Follow Us!!"
 direction = "column"
 text_color = "#ffbf00" 
 item_style = "outline"
+hover_color = "#ff6600"
 
 #[[sections.items]]
 #[[embed_url = "https://www.youtube.com/embed/x0gUY9ddjQY"]]
 
 [[sections.items]]
-title = "Instagram"
-description = "Follow us and DM us a screenshot for a Mystery Reward"
-url = "https://www.instagram.com"
-hover_color = "#FF69B4"
+title = "🎉 Mystery Cashback Reward!"
+description = "1. Follow us on Instagram. \n2. DM us the Screenshot. /n Done!"
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 
 [[sections.items]]
 title = "60% off on Zomato"
@@ -49,23 +49,21 @@ icon_size = "30px"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/instagram/3f4436"
 title = "Instagram"
-url = "https://www.instagram.com/" 
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2" 
 text_color = "#3f4436" 
 hover_color = "#ffffff"
-hover_text_color = "#FF69B4"
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/imdb/3f4436"
 title = "IMDb"
-url = "https://www.imdb.com/"
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#3f4436" 
 hover_color = "#ffffff"
-hover_text_color = "#FF69B4"
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/wikipedia/3f4436"
 title = "Wikipedia"
-url = "https://en.wikipedia.org/wiki/Jake_Gyllenhaal"
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#3f4436" 
 hover_color = "#ffffff"
-hover_text_color = "#FF69B4"
+
