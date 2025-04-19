@@ -95,14 +95,13 @@ def create_section(section: Section):
                 f"""
                 .item-{abs(hash(item.title))} {{
                     transition: all 0.3s ease;
-                    {"color: " + (item.text_color or section.text_color) + ";" if (item.text_color or section.text_color) else ""}
                 }}
                 .item-{abs(hash(item.title))}:hover {{
-                    {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)} !important;
+                    {"border-color" if section.item_style == "outline" else "background-color"}: {(item.hover_color or section.hover_color)};
                 }}
                 """
             )
-            if (item.hover_color or section.hover_color or item.text_color or section.text_color)
+            if (item.hover_color or section.hover_color)
             else None,
             h(
                 "div",
@@ -115,9 +114,6 @@ def create_section(section: Section):
                     klass=f"item-{abs(hash(item.title))} {'outline' if section.item_style == 'outline' else ''}",
                     href=item.url,
                     target="_blank",
-                    style=f"color: {item.text_color or section.text_color};"
-                    if (item.text_color or section.text_color)
-                    else None,
                 )(
                     h(
                         "img",
@@ -125,23 +121,25 @@ def create_section(section: Section):
                         src=item.icon,
                         alt=item.title,
                         style=f"width: {section.icon_size};",
-                    )
-                    if item.icon
-                    else None,
-                    h("hgroup")(h("h4")(item.title), h("h5")(item.description)),
+                    ) if item.icon else None,
+                    h("hgroup")(
+                        h("h4", style=f"color: {item.text_color or section.text_color};")(item.title),
+                        h("h5", style=f"color: {item.text_color or section.text_color};")(item.description),
+                    ),
                 )
             )
         )
         for item in section.items
     )
 
-    return h("div", klass="section")(
+    return h("div", klass="section", style=f"color: {section.text_color};" if section.text_color else None)(
         h("hgroup")(
             h("h3")(section.title),
             h("p")(section.description),
         ),
         h("div", klass="items", style=f"flex-direction: {section.direction}")(items),
     )
+
 
 
 def create_meta_tags(data: Data):
