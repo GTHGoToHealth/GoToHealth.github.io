@@ -21,21 +21,21 @@ hover_color = "#ffffff"
 
 [[sections.items]]
 title = "🎉 Mystery Cashback Reward!"
-#description = "1. Follow us on Instagram. \n2. DM us the Screenshot. /n3. Done!"
-description = """1. Follow us on Instagram.
-2. DM us the Screenshot.
-3. Done!"""
+description = "1. Follow us on Instagram. \n2. DM us the Screenshot. /n3. Done!"
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
+text_color = "#ffbf00" 
 
 [[sections.items]]
 title = "60% off on Zomato"
 description = "Order on Zomato"
 url = "https://www.zomato.com"
+text_color = "#ffbf00" 
 
 [[sections.items]]
 title = "60% off on Swiggy"
 description = "Order on Zomato"
 url = "https://www.swiggy.com"
+text_color = "#ffbf00" 
 
 
 
@@ -46,22 +46,24 @@ description = "Look for me on these websites"
 direction = "row"
 item_style = "filled"
 icon_size = "30px"
-text_color = "#3f4436" 
 hover_color = "#ffffff"
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/instagram/3f4436"
 title = "Instagram"
-url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2" 
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
+text_color = "#3f4436" 
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/imdb/3f4436"
 title = "IMDb"
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
+text_color = "#3f4436" 
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/wikipedia/3f4436"
 title = "Wikipedia"
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
+text_color = "#3f4436" 
 
 
