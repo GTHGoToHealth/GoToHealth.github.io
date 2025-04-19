@@ -167,6 +167,23 @@ def create_head(data: Data):
         create_meta_tags(data),
         h("link", rel="stylesheet", href="css/pico.min.css"),
         h("link", rel="stylesheet", href="css/style.css"),
+
+# GTM Script (in HEAD)
+        raw(
+            f"""
+            <!-- Google Tag Manager -->
+            <script>
+            (function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+            new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }})(window,document,'script','dataLayer','{data.gtag_id}');
+            </script>
+            <!-- End Google Tag Manager -->
+            """
+        ) if data.gtag_id else None,
+
+
         h("style", rel="stylesheet")(
             f"""
                 [data-theme="dark"], [data-theme="light"] {{
@@ -177,19 +194,7 @@ def create_head(data: Data):
                 }}
             """
         ),
-        raw(
-            f"""
-                <script async src="https://www.googletagmanager.com/gtag/js?id={data.gtag_id}"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){{dataLayer.push(arguments);}}
-                gtag('js', new Date());
-                gtag('config', '{data.gtag_id}');
-                </script>
-            """
-        )
-        if data.gtag_id
-        else None,
+    
     )
 
 
@@ -215,8 +220,20 @@ def create_footer():
 def generate_html(data: Data):
     sections = frag(create_section(section) for section in data.sections)
     return html(lang="en", data_theme=data.theme)(
+
+
         create_head(data),
         h("body")(
+            # ✅ GTM noscript iframe goes here
+            raw("""
+                <!-- Google Tag Manager (noscript) -->
+                <noscript>
+                  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55D6RKC6"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                </noscript>
+                <!-- End Google Tag Manager (noscript) -->
+            """)
+            if data.gtag_id else None,
             create_header(data),
             h("main", klass="container")(sections),
             create_footer(),
