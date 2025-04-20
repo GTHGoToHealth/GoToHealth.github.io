@@ -199,16 +199,33 @@ def create_head(data: Data):
          ) if data.gtag_id else None,
 
 
-        h("style", rel="stylesheet")(
-            f"""
-                [data-theme="dark"], [data-theme="light"] {{
-                    --primary: {data.primary_color} !important;
-                }}
-                * {{
-                    text-align: {data.text_align};
-                }}
-            """
-        ),
+#New BG
+h("style")(
+    f"""
+        [data-theme="dark"] {{
+            --primary: {data.primary_color} !important;
+        }}
+        body {{
+            background-color: #000000 !important;
+            color: #ffffff;
+        }}
+        * {{
+            text-align: {data.text_align};
+        }}
+    """
+),
+
+#OLD BG
+        #h("style", rel="stylesheet")(
+         #   f"""
+          #      [data-theme="dark"], [data-theme="light"] {{
+           #         --primary: {data.primary_color} !important;
+            #    }}
+             #   * {{
+              #      text-align: {data.text_align};
+               # }}
+           # """
+       # ),
     
     )
 
