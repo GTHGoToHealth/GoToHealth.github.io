@@ -127,7 +127,7 @@ def create_section(section: Section):
                     ) if item.icon else None,
                     h("hgroup")(
                         h("h4", style=f"color: {item.text_color or section.text_color};")(item.title),
-                       h("h5", style=f"color: {item.text_color or section.text_color};")(raw(item.description.replace("\n", "<br>"))),
+                        h("h5", style=f"color: {item.text_color or section.text_color};")(raw(item.description.replace("\n", "<br>"))) if item.description else None,
 
                     ),
                 )
