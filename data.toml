@@ -41,8 +41,8 @@ text_color = "#ffbf00"
 
 
 [[sections]]
-title = "Links"
-description = "Look for me on these websites"
+title = "Social Media Links"
+description = "It's Free! Follow Us!"
 direction = "row"
 item_style = "filled"
 icon_size = "30px"
@@ -54,16 +54,38 @@ title = "Instagram"
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#3f4436" 
 
-[[sections.items]]
-icon = "https://cdn.simpleicons.org/imdb/3f4436"
-title = "IMDb"
-url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
-text_color = "#3f4436" 
+
+
+
+
+[[sections]]
+title = "GTH Playlists"
+description = "Chewing in silence is illegal. Listen to our curated Playlist"
+direction = "row"
+item_style = "filled"
+icon_size = "30px"
+hover_color = "#ffffff"
+
 
 [[sections.items]]
-icon = "https://cdn.simpleicons.org/wikipedia/3f4436"
-title = "Wikipedia"
-url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
+icon = "https://cdn.simpleicons.org/spotify/3f4436"
+title = "Spotify"
+url = "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6?si=wwBiwvCkTWmmqXE1P8d6tg"
 text_color = "#3f4436" 
 
 
+[[sections.items]]
+icon = "https://cdn.simpleicons.org/applemusic/3f4436"
+title = "Apple Music"
+url = "https://music.apple.com/us/playlist/evergreen/pl.7d5e4029dd9140ffbb5da5fda64b3f02"
+text_color = "#3f4436" 
+
+
+[[sections.items]]
+icon = "https://cdn.simpleicons.org/youtube/3f4436"
+title = "YouTube"
+url = "https://youtube.com/playlist?list=PL4z_RyE17TOtDAhtHXwbgI2kkwIp78_-9&si=lMuMuo3YHVkmiGCB"
+text_color = "#3f4436" 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=lMuMuo3YHVkmiGCB&amp;list=PL4z_RyE17TOtDAhtHXwbgI2kkwIp78_-9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
