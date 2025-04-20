@@ -21,7 +21,8 @@ hover_color = "#ffffff"
 
 [[sections.items]]
 title = "🎉 Mystery Cashback Reward!"
-description = "Follow us on Instagram. ➜ DM us the Screenshot. ➜ Assured Cashback! \nValid for 12 Hours Only"
+description = """Follow us on Instagram. ➜ DM us the Screenshot. ➜ Assured Cashback!
+Valid for 12 Hours Only"""
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#ffbf00" 
 
