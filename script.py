@@ -216,7 +216,7 @@ def create_head(data: Data):
 def create_header(data: Data):
     return h("header", klass="container")(
         h("hgroup")(
-            h("img", klass="avatar", src=f"img/{data.image}", alt="avatar"),
+            h("img", klass="avatar", src=f"img/{data.image}", alt="avatar", style="width: 120px; height: auto;"),
             h("h1")(data.name),
             h("p")(data.description) if data.description else None,
         )
