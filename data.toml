@@ -78,9 +78,9 @@ url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#3f4436" 
 
 [[sections.items]]
-icon = "https://cdn.simpleicons.org/spotify/3f4436"
-title = "Spotify"
-url = "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6?si=wwBiwvCkTWmmqXE1P8d6tg"
+icon = "https://cdn.simpleicons.org/instagram/3f4436"
+title = "Insta"
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#3f4436" 
 
 
