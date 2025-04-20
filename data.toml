@@ -9,7 +9,7 @@ gtag_id = "GTM-55D6RKC6"
 base_url = "https://gthgotohealth.github.io"
 
 [[sections]]
-title = "Links"
+title = "Reward Link!"
 description = "Follow Us!!"
 direction = "column"
 item_style = "outline"
@@ -25,6 +25,15 @@ description = "Follow us on Instagram. ➜ DM us the Screenshot. ➜ Done!"
 url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
 text_color = "#ffbf00" 
 
+
+[[sections]]
+title = "Order Now!"
+description = "Heavy Discount!"
+direction = "column"
+item_style = "outline"
+text_color = "#ffbf00" 
+hover_color = "#ffffff"
+
 [[sections.items]]
 title = "60% off on Zomato"
 description = "Order on Zomato"
@@ -38,6 +47,20 @@ url = "https://www.swiggy.com"
 text_color = "#ffbf00" 
 
 
+
+[[sections]]
+title = "Meal Plan Subscription"
+description = "WhatsApp Us!"
+direction = "row"
+item_style = "filled"
+icon_size = "30px"
+hover_color = "#ffffff"
+
+[[sections.items]]
+icon = "https://cdn.simpleicons.org/whatsapp/3f4436"
+title = "Instagram"
+url = "https://www.instagram.com/gotohealth.in?igsh=NTlreGZpN3RncXk2"
+text_color = "#3f4436" 
 
 
 [[sections]]
