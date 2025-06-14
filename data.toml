@@ -38,7 +38,7 @@ hover_color = "#ffffff"
 [[sections.items]]
 title = "60% off on Zomato"
 description = "Order on Zomato"
-url = "https://www.zomato.com"
+url = "https://link.zomato.com/xqzv/rshare?id=108881748305631a7"
 text_color = "#ffbf00" 
 
 [[sections.items]]
@@ -93,14 +93,14 @@ hover_color = "#ffffff"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/spotify/3f4436"
 title = "Spotify"
-url = "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6?si=wwBiwvCkTWmmqXE1P8d6tg"
+url = "https://open.spotify.com/playlist/6O4yQ6JodyEBQWXl6F7dyk?si=5HSic_NNQN-jF4bEWQ_QUw&pi=a-5P-oxIPqSoe6"
 text_color = "#3f4436" 
 
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/applemusic/3f4436"
 title = "Apple Music"
-url = "https://music.apple.com/us/playlist/evergreen/pl.7d5e4029dd9140ffbb5da5fda64b3f02"
+url = "https://music.apple.com/in/playlist/go-to-health-underrated/pl.u-MDAWvpJTWPdpD7y"
 text_color = "#3f4436" 
 
 
