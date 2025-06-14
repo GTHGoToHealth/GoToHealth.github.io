@@ -60,7 +60,7 @@ hover_color = "#ffffff"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/whatsapp/3f4436"
 title = "WhatsApp"
-url = "https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6?si=wwBiwvCkTWmmqXE1P8d6tg"
+url = "https://wa.me/918989685587"
 text_color = "#3f4436" 
 
 
@@ -99,7 +99,7 @@ text_color = "#3f4436"
 
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/applemusic/3f4436"
-title = "Apple Music New"
+title = "Apple Music"
 url = "https://music.apple.com/in/playlist/go-to-health-underrated/pl.u-MDAWvpJTWPdpD7y"
 text_color = "#3f4436" 
 
